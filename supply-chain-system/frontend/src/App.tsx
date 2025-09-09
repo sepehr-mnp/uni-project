@@ -9,6 +9,13 @@ import { ProductDetail } from './pages/ProductDetail'
 import { TransferProduct } from './pages/TransferProduct'
 import { CreateProduct } from './pages/CreateProduct'
 
+import Tracker from '@openreplay/tracker';
+
+const tracker = new Tracker({
+  projectKey: "sss",  
+});
+
+
 function App() {
   const { isConnected } = useAccount()
 
